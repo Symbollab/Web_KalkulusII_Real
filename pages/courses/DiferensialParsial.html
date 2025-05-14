@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseLab | Diferensial Parsial</title>
+    <link rel="icon" href="../../assets/images/logos/favicon.svg" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- wow js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../../assets/css/font.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-primary" id="navbar-course">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/logos/logo-white.svg" alt="CourseLab" />
+        </a>
+
+        <a href="../courses.html" class="btn btn-warning">
+          <i data-feather="arrow-left"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section id="preload" class="vh-100 w-100 position-fixed active">
+      <div
+        class="h-100 w-100 bg-light-blue d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="../../assets/images/logos/favicon.svg" />
+        <span class="loader"> </span>
+      </div>
+    </section>
+
+    <button
+      onclick="toTop()"
+      class="back-to-top p-3 rounded-pill bg-primary position-fixed"
+    >
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <section class="py-5 bg-primary" id="material">
+      <div class="container position-relative h-100">
+        <div class="heading d-flex flex-column flex-md-row gap-4">
+          <div class="title">
+            <h1 class="font-quicksand-700 text-white">
+              Kalkulus II | Diferensial Parsial
+            </h1>
+            <p class="font-body text-light-blue mb-3">
+              Diferensial parsial dalam Kalkulus 2 adalah turunan dari fungsi
+              yang memiliki lebih dari satu variabel, di mana hanya satu
+              variabel yang diturunkan sementara variabel lainnya dianggap
+              konstan. Konsep ini digunakan untuk menganalisis bagaimana suatu
+              fungsi berubah terhadap salah satu variabelnya, tanpa mengubah
+              yang lain.
+            </p>
+            <p class="font-body text-light-blue">
+              Diferensial parsial banyak digunakan dalam bidang fisika, teknik,
+              dan ekonomi, terutama untuk memodelkan fenomena yang melibatkan
+              banyak faktor, seperti perubahan suhu, tekanan, atau kecepatan.
+              Pemahaman tentang turunan parsial sangat penting dalam persamaan
+              diferensial parsial dan optimasi multivariat.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <div class="image-mentor overflow-hidden rounded-pill">
+                <img
+                  src="../../assets/images/mentors/SandhikaGalih.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="information">
+                <p class="text-white font-quicksand-600">Sandhika Galih</p>
+                <p class="font-body text-light-blue">Mentor di Kalkulus II</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light-blue">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/playlist?list=PLsRMT-s_8wDKpN97BEee4tcdRrutIblI-&si=_w9BznSbyLKJpgPl"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Pengertian Diferensial Parsial #1
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Pengertian Diferensial Parsial
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2">
+                        Turunan atau diferensial parsial adalah turunan dari
+                        fungsi multivariabel (fungsi dua atau lebih variabel),
+                        di mana hanya satu variabel yang diturunkan sedangkan
+                        yang lainnya dianggap konstan.
+                      </p>
+                      <p class="font-body mt-2">Contoh:</p>
+                      <p class="font-body mt-2">
+                        Jika 𝑓 ( 𝑥 , 𝑦 ) adalah fungsi dari dua variabel, maka:
+                      </p>
+                      <div class="images-accordion">
+                        <img
+                          src="../../assets/images/Math/DP1.png"
+                          alt="syntax css"
+                        />
+                      </div>
+                      <p class="font-body mt-2">
+                        Simbol ∂ dibaca "d partial" atau "diferensial parsial".
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Cara Menghitung Turunan Parsial #2
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Cara Menghitung Turunan Parsial
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <div class="images-accordion">
+                        <img
+                          src="../../assets/images/Math/DP2.png"
+                          alt="syntax css"
+                        />
+                      </div>
+                      <ul>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Turunan terhadap 𝑥:
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/DP3.png
+                              "
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">(anggap 𝑦 sebagai konstanta)</p>
+                        </li>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Turunan terhadap 𝑦:
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/DP4.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">(anggap 𝑥 sebagai konstanta)</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Turunan Parsial Orde Kedua #3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Turunan Parsial Orde Kedua
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body">
+                        Untuk fungsi 𝑓 ( 𝑥 , 𝑦 ), kita bisa menurunkan dua kali:
+                      </p>
+                      <ul>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Turunan kedua terhadap satu variabel:
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/DP5.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Turunan campuran (mixed partial):
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/DP6.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Aplikasi Turunan Parsial #4
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Aplikasi Turunan Parsial
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2">
+                        Turunan parsial banyak digunakan dalam:
+                      </p>
+                      <ul>
+                        <li>
+                          <p class="font-body">
+                            Fisika (medan suhu, potensial, gerak)
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            Ekonomi (fungsi produksi: 𝑃 ( 𝐾 , 𝐿 ))p>
+                          </p>
+                        </li>
+
+                        <li>
+                          <p class="font-body">
+                            Teknik (analisis tegangan, aliran fluida)
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">Optimasi multivariat</p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            PDE (Persamaan Diferensial Parsial) seperti
+                            Persamaan Panas atau Gelombang
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Contoh Soal & Penyelesaian #5
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Contoh Soal & Penyelesaian
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body">Contoh:</p>
+                      <div class="images-accordion">
+                        <img
+                          src="../../assets/images/Math/DP7.png"
+                          alt="syntax css"
+                        />
+                      </div>
+                      <p class="font-body">Penyelesaian:</p>
+                      <div class="images-accordion">
+                        <img
+                          src="../../assets/images/Math/DP8.png"
+                          alt="syntax css"
+                        />
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                disabled
+                class="w-100 font-quicksand-600"
+                style="
+                  font-size: 1rem;
+                  padding: 1rem 1.25rem;
+                  border-radius: 25px;
+                  background: transparent;
+                "
+              >
+                Material Coming Soon
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">
+                <img src="/assets/images/logos/logo-white.svg" alt="" />
+                <span></span>
+              </h5>
+              <p class="font-body">
+                Terimakasih sudah berkunjung di website ini . Dukung selalu
+                website ini untuk lebih berkembang lagi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Quick Links<span></span>
+              </h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <a
+                    href="../../index.html"
+                    class="font-body text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../about.html" class="font-body text-decoration-none"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../courses.html"
+                    class="font-body text-decoration-none"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact.html"
+                    class="font-body text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Lokasi<span></span>
+              </h5>
+              <p class="font-body">
+                Tamansari, Tamansari, Kota Tasikmalaya, Jawa Barat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Kontak Kami<span></span>
+              </h5>
+
+              <p>
+                <a href="#" class="font-body text-decoration-none"
+                  >admin@courselab.com</a
+                >
+              </p>
+              <div
+                class="d-flex mt-2 justify-content-start align-items-center gap-3"
+              >
+                <a href="" class="icon-footer">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="" class="icon-footer">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center copy">
+        <p class="font-body text-white py-4">
+          Copyright CourseLab. &copy; 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- bootstrap js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- feather icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- wow js -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+  <!-- my js -->
+  <script src="../../assets/js/preload.js"></script>
+  <script>
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        document.querySelector(".back-to-top").classList.add("active");
+      } else {
+        document.querySelector(".back-to-top").classList.remove("active");
+      }
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseLab | Bilangan Kompleks</title>
+    <link rel="icon" href="../../assets/images/logos/favicon.svg" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- wow js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../../assets/css/font.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-primary" id="navbar-course">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/logos/logo-white.svg" alt="CourseLab" />
+        </a>
+
+        <a href="../courses.html" class="btn btn-warning">
+          <i data-feather="arrow-left"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section id="preload" class="vh-100 w-100 position-fixed active">
+      <div
+        class="h-100 w-100 bg-light-blue d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="../../assets/images/logos/favicon.svg" />
+        <span class="loader"> </span>
+      </div>
+    </section>
+
+    <button
+      onclick="toTop()"
+      class="back-to-top p-3 rounded-pill bg-primary position-fixed"
+    >
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <section class="py-5 bg-primary" id="material">
+      <div class="container position-relative h-100">
+        <div class="heading d-flex flex-column flex-md-row gap-4">
+          <div class="title">
+            <h1 class="font-quicksand-700 text-white">
+              Kalkulus II | Bilangan Kompleks
+            </h1>
+            <p class="font-body text-light-blue">
+              Bilangan kompleks dalam Kalkulus 2 adalah jenis bilangan yang
+              memiliki dua bagian, yaitu bagian real dan bagian imajiner.
+              Bilangan ini digunakan untuk menyelesaikan persoalan matematika
+              yang tidak bisa diselesaikan dengan bilangan real saja, seperti
+              akar dari bilangan negatif.
+            </p>
+            <p class="font-body text-light-blue">
+              Dalam Kalkulus 2, bilangan kompleks berguna untuk menganalisis
+              fungsi kompleks, menyelesaikan integral tertentu, dan digunakan
+              dalam berbagai aplikasi teknik dan fisika. Bilangan ini juga dapat
+              direpresentasikan dalam bentuk aljabar atau polar untuk
+              mempermudah perhitungan.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <div class="image-mentor overflow-hidden rounded-pill">
+                <img
+                  src="../../assets/images/mentors/SandhikaGalih.jpeg"
+                  alt="fath faizal"
+                />
+              </div>
+              <div class="information">
+                <p class="text-white font-quicksand-600">Sandhika Galih</p>
+                <p class="font-body text-light-blue">Mentor di Kalkulus II</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light-blue">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/playlist?list=PLeNivDYKlAfRmX0fqa2XoYEP8eVJqCVvE&si=bDXnXS_r5noYQpiN"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Pengertian Bilangan Kompleks #1
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Pengertian Bilangan Kompleks
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2">
+                        Bilangan kompleks adalah bilangan yang memiliki bagian
+                        real dan bagian imajiner, dituliskan dalam bentuk:
+                      </p>
+                      <div class="images-accordion">
+                        <img
+                          src="../../assets/images/Math/BK1.png"
+                          alt="syntax css"
+                        />
+                      </div>
+                      <p class="font-body mt-2">Dengan:</p>
+                      <ul>
+                        <li><p class="font-body">𝑎 : bagian real</p></li>
+                        <li><p class="font-body">b: bagian imajiner</p></li>
+                        <li>
+                          <p class="font-body">
+                            i: satuan imajiner, di mana 𝑖 2 = − 1 i^2 = −1
+                          </p>
+                        </li>
+                      </ul>
+                      <p class="font-body mt-2">Contoh:</p>
+                      <ul>
+                        <li><p class="font-body">𝑖 3+2i</p></li>
+                        <li><p class="font-body">− 5 𝑖 −5i</p></li>
+                        <li>
+                          <p class="font-body">
+                            7 (bilangan real murni, karena 𝑏 = 0)
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Komponen Bilangan Kompleks #2
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Komponen Bilangan Kompleks
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2">Jika 𝑧 = 𝑎 + 𝑏 𝑖 , maka:</p>
+                      <ul>
+                        <li>
+                          <p class="font-body">Bagian real: Re( 𝑧 ) = 𝑎</p>
+                        </li>
+                        <li>
+                          <p class="font-body">Bagian imajiner: Im ( 𝑧 ) = 𝑏</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Operasi Bilangan Kompleks #3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Operasi Bilangan Kompleks
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li>
+                          <h5>Penjumlahan</h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK2.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5>Pengurangan</h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK3.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5>Perkalian</h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK4.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5>Pembagian</h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK5.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Konjugat dan Modulus #4
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Konjugat dan Modulus
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2"></p>
+                      <ul>
+                        <li>
+                          <h5>Konjugat</h5>
+                          <p class="font-body">
+                            Konjugat dari 𝑧 = 𝑎 + 𝑏 𝑖 adalah:
+                          </p>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK6.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5>Modulus (Panjang/Norma)</h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/BK7.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">
+                            Modulus adalah jarak dari titik 𝑧 ke pusat koordinat
+                            dalam bidang kompleks.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Aplikasi Bilangan Kompleks #5
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Aplikasi Bilangan Kompleks
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li><p class="font-body">Fisika (gelombang, listrik AC)</p></li>
+                        <li><p class="font-body">Teknik elektro (impedansi)</p></li>
+                        <li><p class="font-body">Matematika murni</p></li>
+                        <li><p class="font-body">Grafik transformasi kompleks</p></li>
+                        <li><p class="font-body">Komputasi sinyal digital (FFT)</p></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                disabled
+                class="w-100 font-quicksand-600"
+                style="
+                  font-size: 1rem;
+                  padding: 1rem 1.25rem;
+                  border-radius: 25px;
+                  background: transparent;
+                "
+              >
+                Material Coming Soon
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">
+                <img src="/assets/images/logos/logo-white.svg" alt="" />
+                <span></span>
+              </h5>
+              <p class="font-body">
+                Terimakasih sudah berkunjung di website ini . Dukung selalu
+                website ini untuk lebih berkembang lagi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Quick Links<span></span>
+              </h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <a
+                    href="../../index.html"
+                    class="font-body text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../about.html" class="font-body text-decoration-none"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../courses.html"
+                    class="font-body text-decoration-none"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact.html"
+                    class="font-body text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Lokasi<span></span>
+              </h5>
+              <p class="font-body">
+                Tamansari, Tamansari, Kota Tasikmalaya, Jawa Barat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Kontak Kami<span></span>
+              </h5>
+
+              <p>
+                <a href="#" class="font-body text-decoration-none"
+                  >admin@courselab.com</a
+                >
+              </p>
+              <div
+                class="d-flex mt-2 justify-content-start align-items-center gap-3"
+              >
+                <a href="" class="icon-footer">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="" class="icon-footer">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center copy">
+        <p class="font-body text-white py-4">
+          Copyright CourseLab. &copy; 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- bootstrap js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- feather icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- wow js -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+  <!-- my js -->
+  <script src="../../assets/js/preload.js"></script>
+  <script>
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        document.querySelector(".back-to-top").classList.add("active");
+      } else {
+        document.querySelector(".back-to-top").classList.remove("active");
+      }
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
+</html>

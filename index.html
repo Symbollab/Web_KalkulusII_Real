@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Courselab.</title>
+    <meta
+      name="description"
+      content="Innovate your learning experience with Courselab."
+    />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/logos/favicon.svg" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiperjs css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- wow js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/font.css" />
+  </head>
+  <body>
+    <!-- navbar section -->
+    <nav
+      class="navbar position-absolute top-0 w-100 navbar-expand-lg py-4"
+      id="navbar"
+    >
+      <div class="container-fluid container">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            src="./assets/images/logos/logo-white.svg"
+            id="logo"
+            alt="Courselab."
+          />
+        </a>
+        <div class="collapse navbar-collapse font-quicksand-700">
+          <ul class="navbar-nav gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/mentors.html">Mentors</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <a
+            href="./pages/signin.html"
+            class="btn btn-primary font-quicksand-700"
+            id="cta-nav"
+            >Get Started</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+          >
+            <i data-feather="menu"></i>
+          </button>
+        </div>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="./assets/images/logos/logo.svg" />
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul
+              class="navbar-nav justify-content-end flex-grow-1 pe-3 body-text gap-3"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/courses.html">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/mentors.html">Mentors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+              </li>
+              <div class="d-none align-items-center gap-3" id="cta-side">
+                <a
+                  href="./pages/signin.html"
+                  class="btn btn-primary font-quicksand-700"
+                  >Get Started</a
+                >
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="preload" class="vh-100 w-100 position-fixed active">
+      <div
+        class="h-100 w-100 bg-light-blue d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="./assets/images/logos/favicon.svg" />
+        <span class="loader"> </span>
+      </div>
+    </section>
+
+    <!-- Section Hero -->
+    <section
+      id="hero"
+      class="bg-primary vh-100 px-md-0 px-3 position-relative overflow-hidden"
+    >
+      <div id="particles-js"></div>
+      <div
+        class="container position-relative z-2 d-flex align-items-center justify-content-center h-100"
+      >
+        <div
+          class="left-hero d-flex justify-content-center flex-column gap-3 h-100 wow bounceInUp"
+          data-wow-delay="1s"
+          data-wow-duration="1s"
+        >
+          <h1 class="font-quicksand-700 text-white">
+            Transform <span class="text-warning">Your</span>
+            <span class="text-warning">Learning</span> Experience with
+            <span class="text-warning">Courselab</span>
+          </h1>
+          <p class="font-body text-light-blue">
+            Platform pendidikan online, cara mudah untuk belajar Kalkulus kapan
+            saja dan di mana saja!
+          </p>
+          <div
+            class="position-relative d-flex align-items-center w-md-75 w-sm-100"
+          >
+            <input
+              type="text"
+              name="search"
+              class="input w-100 p-3 rounded font-body"
+              id="search"
+              placeholder="Type your course"
+            />
+            <a
+              href="./pages/courses.html"
+              class="icon-search bg-warning position-absolute me-2 end-0 p-2 rounded d-flex align-items-center justify-content-center"
+            >
+              <i data-feather="search" class="text-primary"></i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="right-hero d-flex justify-content-center align-items-end h-100"
+        >
+          <img
+            src="./assets/images/person/image-hero.png"
+            alt="hero image"
+            class="hero-image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section proccess -->
+    <section class="bg-light-blue py-5 overflow-hidden" id="process">
+      <div
+        class="container d-flex flex-column gap-5 justify-content-center align-items-center"
+      >
+        <div class="heading text-center">
+          <h2 class="font-quicksand-700 text-primary">
+            Mulai Sekarang, Ikutan dan Nikmatin Keuntungannya!
+          </h2>
+          <p class="font-body">Dapatkan manfaat dan pengalaman bersama kami</p>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-5 position-relative">
+          <div class="col wow bounceInRight center" data-wow-delay="0.0s">
+            <div class="card h-100 text-start">
+              <div class="card-icon bg-primary position-relative">
+                <i data-feather="search"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="text-capitalize font-quicksand-700">
+                  temukan Materi Belajar
+                </h5>
+                <p class="font-body">
+                  Kami bantu Anda untuk belajar dengan materi yang mudah
+                  dipahami dan berkualitas!
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="arrow1 wow fadeInUp"
+            data-wow-delay="0.9s"
+            src="./assets/images/vektor/arrow1.svg"
+          />
+          <div class="col wow bounceInRight" data-wow-delay="0.4s">
+            <div class="card h-100 text-start">
+              <div class="card-icon bg-primary position-relative">
+                <i data-feather="calendar"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="text-capitalize font-quicksand-700">
+                  Pilih & Daftar
+                </h5>
+                <p class="font-body">
+                  Tentukan Materi yang ingin dipelajari dan Mulai daftar
+                  sekarang!
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            class="arrow2 wow fadeInUp"
+            data-wow-delay="0.9s"
+            src="./assets/images/vektor/arrow2.svg"
+          />
+          <div class="col wow bounceInRight" data-wow-delay="0.8s">
+            <div class="card h-100 text-start">
+              <div class="card-icon bg-primary position-relative">
+                <i data-feather="award"></i>
+              </div>
+              <div class="card-body">
+                <h5 class="text-capitalize font-quicksand-700">
+                  Dapatkan Materi Pembelajaran
+                </h5>
+                <p class="font-body">
+                  Dapatkan Materi Pembelajaran dan Mulai Belajar untuk Meraih
+                  Kesuksesan.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section popular corse -->
+    <section class="bg-primary position-relative overflow-hidden" id="popular">
+      <div
+        id="bg-decoration"
+        class="wow fadeInLeft"
+        data-wow-delay="0.5s"
+      ></div>
+      <div
+        class="container py-5 d-flex flex-column gap-5 justify-content-center align-items-center"
+      >
+        <div
+          class="heading text-start w-100 pb-3 d-flex flex-column flex-md-row gap-3 justify-content-between align-items-center"
+        >
+          <div class="wow bounceInLeft">
+            <h2 class="font-quicksand-700 text-white text-capitalize">
+              Materi Pembelajaran Ter-Populer
+            </h2>
+            <p class="font-body text-light-blue">
+              Dari mana saja dan kapan saja belajar jadi lebih mudah dengan
+              platform online kami!
+            </p>
+          </div>
+          <div class="wow bounceInRight">
+            <a
+              href="./pages/courses.html"
+              class="btn btn-warning text-capitalize font-quicksand-600"
+              >see all courses</a
+            >
+          </div>
+        </div>
+        <div
+          class="row row-cols-1 row-cols-md-3 justify-content-center align-items-center w-100"
+        >
+          <div class="col wow bounceInUp center" data-wow-delay="0.05s">
+            <a href="./pages/courses/Limit.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/courses/Limit.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <div
+                    class="category mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <p class="font-quicksand-600 text-capitalize text-primary">
+                      Kalkulus I
+                    </p>
+                  </div>
+                  <div class="material">
+                    <h5 class="font-quicksand-700 text-capitalize">Limit</h5>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="icon d-flex align-items-center gap-2">
+                    <i data-feather="book"></i>
+                    <p class="subject font-body">5 Material</p>
+                  </div>
+                  <div class="icon d-flex align-items-center gap-2">
+                    <i data-feather="star"></i>
+                    <p class="subject font-body">5/5</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col wow bounceInUp center" data-wow-delay="0.05s">
+            <a href="./pages/courses/BilanganKompleks.html" class="text-decoration-none">
+              <div class="card h-100">
+                <div class="card-image">
+                  <img
+                    src="./assets/images/courses/BilanganKompleks.jpg"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-body">
+                  <div
+                    class="category mb-2 d-flex justify-content-center align-items-center"
+                  >
+                    <p class="font-quicksand-600 text-capitalize text-primary">
+                      Kalkulus II
+                    </p>
+                  </div>
+                  <div class="material">
+                    <h5 class="font-quicksand-700 text-capitalize">
+                      Bilangan Kompleks
+                    </h5>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <div class="icon d-flex align-items-center gap-2">
+                    <i data-feather="book"></i>
+                    <p class="subject font-body">5 Material</p>
+                  </div>
+                  <div class="icon d-flex align-items-center gap-2">
+                    <i data-feather="star"></i>
+                    <p class="subject font-body">4,9/5</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonial -->
+    <section id="testimoni" class="py-5 bg-light-blue overflow-hidden">
+      <div
+        class="container d-flex h-100 flex-column flex-xl-row-reverse align-items-center gap-5"
+      >
+        <div class="heading text-end wow bounceInRight">
+          <h2 class="font-quicksand-700 text-primary text-capitalize">
+            Testimoni Pengguna Mengenai CourseLab
+          </h2>
+          <p class="font-body">
+            Yuk, simak cerita seru dari salah satu Pengguna kami yang telah
+            bergabung dengan kursus ini!
+          </p>
+        </div>
+
+        <div class="swiper bg-primary">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <div class="card w-50">
+                <div class="card-profile" data-name="Raden">
+                  <img src="./assets/images/person/Raden.jpg" alt="" />
+                </div>
+                <div class="card-body">
+                  <img
+                    src="./assets/images/vektor/petik.svg"
+                    alt=".."
+                    class="bg-petik"
+                  />
+                  <p class="font-quicksand-700 py-5 text-center">
+                    "Belajar di CourseLab itu seru! Materinya dimulai dari
+                    dasar, lalu secara bertahap menjadi menantang tapi tetap
+                    menyenangkan. Modul-modulnya juga disusun dengan baik dan
+                    mudah dipahami."
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <div class="card w-50">
+                <div class="card-profile" data-name="Fadhil">
+                  <img src="./assets/images/person/fadhil.jpg" alt="" />
+                </div>
+                <div class="card-body">
+                  <img
+                    src="./assets/images/vektor/petik.svg"
+                    alt=".."
+                    class="bg-petik"
+                  />
+                  <p class="font-quicksand-700 py-5 text-center">
+                    "Belajar jadi lebih gampang bareng CourseLab! Penjelasannya
+                    jelas banget dan materinya juga mudahd dipahami!"
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide d-flex align-items-center justify-content-center"
+            >
+              <div class="card w-50">
+                <div class="card-profile" data-name="Fawwaz">
+                  <img src="./assets/images/person/Fawwaz.jpg" alt="" />
+                </div>
+                <div class="card-body">
+                  <img
+                    src="./assets/images/vektor/petik.svg"
+                    alt=".."
+                    class="bg-petik"
+                  />
+                  <p class="font-quicksand-700 py-5 text-center">
+                    "Kelasnya nggak ngebosenin, malah seru dan membantu saya
+                    untuk mengerti materi lebih mudah!"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cta -->
+    <section id="cta" class="py-5 bg-primary overflow-hidden position-relative">
+      <div
+        id="particle-cta"
+        class="position-absolute w-100 top-0 start-0 z-1"
+      ></div>
+      <div
+        data-wow-iteration="3"
+        data-wow-duration="0.15s"
+        class="container wow pulse position-relative z-3 text-white text-center d-flex flex-column gap-4 justify-content-center align-items-center"
+      >
+        <h2 class="font-quicksand-700">
+          Eksplorasi Kursus, Maksimalkan Potensimu! Daftar di CourseLab
+          Sekarang!
+        </h2>
+        <p class="font-body text-light-blue">
+          Jangan Lewatkan Peluang untuk Belajar Lebih Banyak dan Menjadi Lebih
+          Hebat! Daftar Sekarang dan Jadikan Dirimu Siap Meraih kesuksesan!
+        </p>
+        <a
+          href="./pages/signin.html"
+          class="btn btn-warning font-quicksand-700 text-capitalize text-primary"
+          >get started</a
+        >
+      </div>
+    </section>
+
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">
+                <img src="./assets/images/logos/logo-white.svg" alt="" />
+                <span></span>
+              </h5>
+              <p class="font-body">
+                Terimakasih sudah berkunjung di website ini . Dukung selalu
+                website ini untuk lebih berkembang lagi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Quick Links<span></span>
+              </h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <a href="./index.html" class="font-body text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./pages/about.html"
+                    class="font-body text-decoration-none"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./pages/courses.html"
+                    class="font-body text-decoration-none"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./pages/mentors.html"
+                    class="font-body text-decoration-none"
+                    >Mentors</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="./pages/contact.html"
+                    class="font-body text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Lokasi<span></span>
+              </h5>
+              <p class="font-body">
+                Tamansari, Tamansari, Kota Tasikmalaya, Jawa Barat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Kontak Kami<span></span>
+              </h5>
+
+              <p>
+                <a href="#" class="font-body text-decoration-none"
+                  >admin@courselab.com</a
+                >
+              </p>
+              <div
+                class="d-flex mt-2 justify-content-start align-items-center gap-3"
+              >
+                <a href="" class="icon-footer">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="" class="icon-footer">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center copy">
+        <p class="font-body text-white py-4">
+          Copyright CourseLab. &copy; 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- bootstrap js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- particle js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+  <!-- feather icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- swiperjs -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- wow js -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+  <!-- my js -->
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/preload.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script>
+    const logo = document.getElementById("logo");
+    const navbar = document.getElementById("navbar");
+
+    const scrollHandle = () => {
+      const scrolY = window.scrollY;
+
+      if (scrolY > 0) {
+        logo.src = "./assets/images/logos/logo.svg";
+        navbar.classList.add("active");
+      } else {
+        logo.src = "./assets/images/logos/logo-white.svg";
+        navbar.classList.remove("active");
+      }
+    };
+
+    window.addEventListener("scroll", scrollHandle);
+  </script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      // Optional parameters
+      // loop: true,
+
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      // If we need pagination
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</html>

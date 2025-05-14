@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CourseLab | Integral Tak Wajar</title>
+    <link rel="icon" href="../../assets/images/logos/favicon.svg" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- wow js -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="../../assets/css/font.css" />
+    <link rel="stylesheet" href="../../assets/css/style.css" />
+  </head>
+  <body>
+    <nav class="navbar bg-primary" id="navbar-course">
+      <div class="container">
+        <a class="navbar-brand" href="../../index.html">
+          <img src="../../assets/images/logos/logo-white.svg" alt="CourseLab" />
+        </a>
+
+        <a href="../courses.html" class="btn btn-warning">
+          <i data-feather="arrow-left"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section id="preload" class="vh-100 w-100 position-fixed active">
+      <div
+        class="h-100 w-100 bg-light-blue d-flex flex-column justify-content-center align-items-center"
+      >
+        <img src="../../assets/images/logos/favicon.svg" />
+        <span class="loader"> </span>
+      </div>
+    </section>
+
+    <button
+      onclick="toTop()"
+      class="back-to-top p-3 rounded-pill bg-primary position-fixed"
+    >
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <section class="py-5 bg-primary" id="material">
+      <div class="container position-relative h-100">
+        <div class="heading d-flex flex-column flex-md-row gap-4">
+          <div class="title">
+            <h1 class="font-quicksand-700 text-white">
+              Kalkulus II | Integral Tak Wajar
+            </h1>
+            <p class="font-body text-light-blue mb-3">
+              Integral tak wajar dalam Kalkulus 2 adalah jenis integral yang
+              batasnya tidak terbatas atau melibatkan fungsi yang tidak
+              terdefinisi di suatu titik dalam interval. Karena itu, perhitungan
+              integral ini memerlukan pendekatan limit untuk menentukan apakah
+              hasilnya konvergen (berhingga) atau divergen (tak berhingga).
+            </p>
+            <p class="font-body text-light-blue">
+              Integral tak wajar sering muncul dalam aplikasi fisika, teknik,
+              dan probabilitas, terutama saat memodelkan fenomena yang
+              melibatkan nilai ekstrem atau tak terbatas. Pemahaman tentang
+              integral ini penting untuk menangani kasus-kasus di mana metode
+              integral biasa tidak dapat digunakan secara langsung.
+            </p>
+            <div class="d-flex gap-2 mt-4">
+              <div class="image-mentor overflow-hidden rounded-pill">
+                <img
+                  src="../../assets/images/mentors/SandhikaGalih.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="information">
+                <p class="text-white font-quicksand-600">Sandhika Galih</p>
+                <p class="font-body text-light-blue">Mentor di Kalkulus II</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light-blue">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center mb-4">
+          <div class="video-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/kRsVVZzlN8A?si=FjUan0P5rKc3EDaC"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Pengertian Integral Tak Wajar #1
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Pengertian Integral Tak Wajar
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <p class="font-body mt-2">
+                        Integral Tak Wajar adalah integral yang batasnya tak
+                        hingga atau fungsi yang diintegralkan tidak terdefinisi
+                        pada suatu titik dalam interval.
+                      </p>
+                      <p class="font-body mt-2">
+                        Dengan kata lain, integral tak wajar muncul jika::
+                      </p>
+                      <ul>
+                        <li>
+                          <p class="font-body">
+                            Domain integralnya tidak terbatas (menuju ∞ atau −∞)
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            Fungsi tidak kontinu di titik tertentu dalam selang
+                            integrasi (terjadi diskontinuitas vertikal)
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                Jenis-Jenis Integral Tak Wajar #2
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Jenis-Jenis Integral Tak Wajar
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li>
+                          <h5 class="font-quicksand-500">Batas Tidak Hingga</h5>
+                          <p class="font-body">
+                            Integral dari fungsi dengan batas bawah atau atas
+                            menuju tak hingga:
+                          </p>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW1.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">Didefinisikan sebagai limit:</p>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW2.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                        <li>
+                          <h5 class="font-quicksand-500">
+                            Fungsi Tak Terdefinisi di Interval
+                          </h5>
+                          <p class="font-body">
+                            Fungsi tidak terdefinisi atau tidak kontinu pada
+                            batas atau titik dalam interval, misalnya:
+                          </p>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW3.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">
+                            Misalnya, jika fungsi tak terdefinisi di 𝑥 = 𝑎,
+                            maka:
+                          </p>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW4.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Contoh Integral Tak Wajar #3
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Contoh Integral Tak Wajar
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Contoh A: Batas atas tak hingga
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW5.png"
+                              alt="syntax css"
+                            />
+                          </div>
+                          <p class="font-body">
+                            Konvergen (karena hasilnya berhingga)
+                          </p>
+                        </li>
+                        <li>
+                          <h5 class="font-quicksand-600">
+                            Contoh B: Fungsi tak terdefinisi di batas bawah
+                          </h5>
+                          <div class="images-accordion">
+                            <img
+                              src="../../assets/images/Math/IntegralTW6.png"
+                              alt="syntax css"
+                            />
+                            <p class="font-body">Konvergen</p>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFour"
+                aria-expanded="false"
+                aria-controls="flush-collapseFour"
+              >
+                Langkah Mengerjakan Integral Tak Wajar #4
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFour"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Langkah Mengerjakan Integral Tak Wajar
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li>
+                          <p class="font-body">
+                            Identifikasi jenis ketakwajaran: tak hingga atau
+                            diskontinuitas
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            Ganti batas tak wajar dengan limit
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">Hitung integral seperti biasa</p>
+                        </li>
+                        <li>
+                          <p class="font-body">Evaluasi limit</p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            Simpulkan: hasil konvergen atau divergen
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                class="accordion-button collapsed font-quicksand-600"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseFive"
+                aria-expanded="false"
+                aria-controls="flush-collapseFive"
+              >
+                Aplikasi Integral Tak Wajar #5
+              </button>
+            </h2>
+            <div
+              id="flush-collapseFive"
+              class="accordion-collapse collapse"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div
+                class="accordion-body d-flex flex-column align-items-start gap-2"
+              >
+                <ul>
+                  <li class="mb-3">
+                    <div class="heading">
+                      <h4 class="font-quicksand-600 text-black">
+                        Aplikasi Integral Tak Wajar
+                      </h4>
+                    </div>
+                    <div class="the-material">
+                      <ul>
+                        <li>
+                          <p class="font-body">
+                            Probabilitas (fungsi distribusi kontinu)
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">
+                            Fisika (gelombang, peluruhan radioaktif)
+                          </p>
+                        </li>
+                        <li>
+                          <p class="font-body">Statistika (kurva normal)</p>
+                        </li>
+                        <li>
+                          <p class="font-body">Perhitungan area tak terbatas</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button
+                disabled
+                class="w-100 font-quicksand-600"
+                style="
+                  font-size: 1rem;
+                  padding: 1rem 1.25rem;
+                  border-radius: 25px;
+                  background: transparent;
+                "
+              >
+                Material Coming Soon
+              </button>
+            </h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer" class="pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget subscribe no-box">
+              <h5 class="widget-title">
+                <img src="/assets/images/logos/logo-white.svg" alt="" />
+                <span></span>
+              </h5>
+              <p class="font-body">
+                Terimakasih sudah berkunjung di website ini . Dukung selalu
+                website ini untuk lebih berkembang lagi.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Quick Links<span></span>
+              </h5>
+              <ul class="thumbnail-widget">
+                <li>
+                  <a
+                    href="../../index.html"
+                    class="font-body text-decoration-none"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="../about.html" class="font-body text-decoration-none"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../courses.html"
+                    class="font-body text-decoration-none"
+                    >Courses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../contact.html"
+                    class="font-body text-decoration-none"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Lokasi<span></span>
+              </h5>
+              <p class="font-body">
+                Tamansari, Tamansari, Kota Tasikmalaya, Jawa Barat.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-6 col-md-3">
+            <div class="widget no-box">
+              <h5 class="widget-title font-quicksand-600">
+                Kontak Kami<span></span>
+              </h5>
+
+              <p>
+                <a href="#" class="font-body text-decoration-none"
+                  >admin@courselab.com</a
+                >
+              </p>
+              <div
+                class="d-flex mt-2 justify-content-start align-items-center gap-3"
+              >
+                <a href="" class="icon-footer">
+                  <i data-feather="instagram"></i>
+                </a>
+                <a href="" class="icon-footer">
+                  <i data-feather="youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center copy">
+        <p class="font-body text-white py-4">
+          Copyright CourseLab. &copy; 2025. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+  <!-- bootstrap js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- feather icon -->
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+  <!-- wow js -->
+  <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
+
+  <!-- my js -->
+  <script src="../../assets/js/preload.js"></script>
+  <script>
+    function toTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+  <script>
+    feather.replace();
+  </script>
+  <script>
+    window.addEventListener("scroll", function () {
+      if (window.scrollY > 0) {
+        document.querySelector(".back-to-top").classList.add("active");
+      } else {
+        document.querySelector(".back-to-top").classList.remove("active");
+      }
+    });
+  </script>
+  <script>
+    new WOW().init();
+  </script>
+</html>
